@@ -10,4 +10,10 @@ public class TransportController {
     public String showTransportPage() {
         return "transport-menu";
     }
+
+    @RequestMapping("/search")
+    public String searchTransportByModelPage() { return "transport-search"; }
+
+    @RequestMapping("/transport")
+    public String getTransportByModelPage() { return "searched-transport"; }
 }
