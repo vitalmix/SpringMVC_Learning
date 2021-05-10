@@ -9,7 +9,7 @@
 
 <hr>
 
-<a href="search">Search transport</a>
+<a href="hello/search">Search transport</a>
 </body>
 
 <footer>
