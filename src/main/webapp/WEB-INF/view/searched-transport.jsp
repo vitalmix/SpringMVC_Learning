@@ -16,6 +16,8 @@
 <br>
 
 Transport: ${param.transportModel}
+<br>
+Message: ${message}
 
 </body>
 </html>
