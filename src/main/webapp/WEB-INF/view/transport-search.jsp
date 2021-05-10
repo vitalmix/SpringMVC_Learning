@@ -13,7 +13,7 @@
 </head>
 <body>
 
-<form action="transport" method="GET">
+<form action="transportV2" method="GET">
     <p>Input transport model code: <br></p>
     <input name="transportModel" placeholder="input the model of transport">
     <input type="submit" value="sub">
