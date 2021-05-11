@@ -15,9 +15,9 @@
 
 <br>
 
-Transport: ${param.transportModel}
+Transport: ${starShip.model}
 <br>
-Message: ${message}
+Message: ${starShip.model}
 
 </body>
 </html>
