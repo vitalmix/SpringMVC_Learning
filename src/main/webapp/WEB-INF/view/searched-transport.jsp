@@ -15,9 +15,11 @@
 
 <br>
 
-Transport: ${starShip.model}
-<br>
-Message: ${starShip.model}
+Transport:
+<br><br>
+Model: ${starShip.model}
+<br><br>
+Weapon: ${starShip.weapon}
 
 </body>
 </html>

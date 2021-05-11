@@ -24,6 +24,13 @@
 <form:form action="transport" modelAttribute="starShip">
     <p>Input transport model code: <br><br></p>
     <form:input path="model" />
+    <br><br>
+    <form:select path="weapon">
+        <form:option value="Rokets" label="Rokets" />
+        <form:option value="MashGun" label="MashGun" />
+        <form:option value="LaserGun" label="LaserGun" />
+    </form:select>
+    <br><br>
     <input type="submit" value="sub">
 </form:form>
 
