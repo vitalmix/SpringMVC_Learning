@@ -33,6 +33,10 @@
         <form:options items="${starShip.weaponOptions}"/>
     </form:select>
     <br><br>
+    Invisibility <form:radiobutton path="module" value="invis"/>
+    ExtraGunPower <form:radiobutton path="module" value="EGP"/>
+    ExtraEnginePowe <form:radiobutton path="module" value="EEP"/>
+    <br><br>
     <input type="submit" value="sub">
 </form:form>
 

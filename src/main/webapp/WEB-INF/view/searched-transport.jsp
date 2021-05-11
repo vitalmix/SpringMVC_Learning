@@ -20,6 +20,8 @@ Transport:
 Model: ${starShip.model}
 <br><br>
 Weapon: ${starShip.weapon}
+<br><br>
+Module: ${starShip.module}
 
 </body>
 </html>

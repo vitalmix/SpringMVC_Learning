@@ -6,6 +6,7 @@ public class StarShip implements Transport {
 
     private String model;
     private String weapon;
+    private String module;
 
     private LinkedHashMap<String, String> weaponOptions;
 
@@ -47,5 +48,13 @@ public class StarShip implements Transport {
 
     public LinkedHashMap<String, String> getWeaponOptions() {
         return weaponOptions;
+    }
+
+    public String getModule() {
+        return module;
+    }
+
+    public void setModule(String module) {
+        this.module = module;
     }
 }
