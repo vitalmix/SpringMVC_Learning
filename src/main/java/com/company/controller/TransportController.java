@@ -45,5 +45,12 @@ public class TransportController {
 
         System.out.println(starShip.getModel());
 
+        System.out.println("AdditionalModules:");
+
+        for (String s :
+                starShip.getPutAdditionalModules()) {
+            System.out.println("Module: " + s);
+        }
+
         return "searched-transport"; }
 }

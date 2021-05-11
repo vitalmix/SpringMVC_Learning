@@ -1,5 +1,6 @@
 package com.company.model;
 
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
 
 public class StarShip implements Transport {
@@ -10,6 +11,8 @@ public class StarShip implements Transport {
 
     private LinkedHashMap<String, String> weaponOptions;
 
+    private ArrayList<String> additionalModules;
+
     public StarShip() {
 
         weaponOptions = new LinkedHashMap<>();
@@ -19,7 +22,7 @@ public class StarShip implements Transport {
         weaponOptions.put("LaserGun", "LaserGun");
         weaponOptions.put("None", "None");
 
-
+        additionalModules = new ArrayList<>();
     }
 
     public void move() {
@@ -56,5 +59,14 @@ public class StarShip implements Transport {
 
     public void setModule(String module) {
         this.module = module;
+    }
+
+    public ArrayList<String> getPutAdditionalModules() {
+        return additionalModules;
+    }
+
+
+    public void setPutAdditionalModules(ArrayList<String> additionalModules) {
+        this.additionalModules = additionalModules;
     }
 }

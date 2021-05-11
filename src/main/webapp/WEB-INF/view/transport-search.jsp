@@ -7,6 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="from" uri="http://www.springframework.org/tags/form" %>
 
 <!DOCTYPE html>
 <html>
@@ -35,7 +36,13 @@
     <br><br>
     Invisibility <form:radiobutton path="module" value="invis"/>
     ExtraGunPower <form:radiobutton path="module" value="EGP"/>
-    ExtraEnginePowe <form:radiobutton path="module" value="EEP"/>
+    ExtraEnginePower <form:radiobutton path="module" value="EEP"/>
+    <br><br>
+    AdditionalModules:
+    <br>
+    M1 <from:checkbox path="putAdditionalModules" value="M1"/>
+    M2 <from:checkbox path="putAdditionalModules" value="M2"/>
+    M3 <from:checkbox path="putAdditionalModules" value="M3"/>
     <br><br>
     <input type="submit" value="sub">
 </form:form>
