@@ -26,9 +26,11 @@
     <form:input path="model" />
     <br><br>
     <form:select path="weapon">
-        <form:option value="Rokets" label="Rokets" />
+        <%--<form:option value="Rockets" label="Rockets" />
         <form:option value="MashGun" label="MashGun" />
-        <form:option value="LaserGun" label="LaserGun" />
+        <form:option value="LaserGun" label="LaserGun" />--%>
+
+        <form:options items="${starShip.weaponOptions}"/>
     </form:select>
     <br><br>
     <input type="submit" value="sub">
