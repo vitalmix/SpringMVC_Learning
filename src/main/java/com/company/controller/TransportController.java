@@ -3,11 +3,13 @@ package com.company.controller;
 import com.company.model.StarShip;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.validation.Valid;
 
 @Controller
 @RequestMapping("/hello")
@@ -52,5 +54,18 @@ public class TransportController {
             System.out.println("Module: " + s);
         }
 
-        return "searched-transport"; }
+        return "searched-transport";
+    }
+
+    @RequestMapping("/transportRegistration")
+    public String getTransportRegistration(@Valid @ModelAttribute("starShip") StarShip starShip,
+                                           BindingResult bindingResult) {
+
+        if(bindingResult.hasErrors()) {
+            return "transport-registration";
+        }
+        else {
+            return "transport-is-registered";
+        }
+    }
 }

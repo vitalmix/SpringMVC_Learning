@@ -1,10 +1,14 @@
 package com.company.model;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 
 public class StarShip implements Transport {
 
+    @NotNull(message = "is required")
+    @Size(min = 3, message = "is required")
     private String model;
     private String weapon;
     private String module;
