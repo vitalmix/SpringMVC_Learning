@@ -8,7 +8,7 @@ import java.util.LinkedHashMap;
 public class StarShip implements Transport {
 
     @NotNull(message = "is required")
-    @Size(min = 3, message = "is required")
+    @Size(min = 3, message = "size of model must be => 3")
     private String model;
     private String weapon;
     private String module;

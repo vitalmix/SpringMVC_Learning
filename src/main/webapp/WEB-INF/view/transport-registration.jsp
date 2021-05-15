@@ -11,6 +11,10 @@
 <html>
 <head>
     <title>Registration of transport</title>
+
+    <style>
+        .error {color: red}
+    </style>
 </head>
 <body>
 
