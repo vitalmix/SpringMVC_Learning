@@ -1,16 +1,14 @@
 package com.company.model;
 
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
+import javax.validation.constraints.*;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 
 public class StarShip implements Transport {
 
     @NotNull(message = "is required")
-    @Size(min = 3, message = "size of model must be => 3")
+    //@Size(min = 3, message = "size of model must be => 3")
+    @Pattern(regexp = "^[a-zA-Z0-9]{5}", message = "only letters")
     private String model;
     private String weapon;
     private String module;
