@@ -1,5 +1,7 @@
 package com.company.model;
 
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.util.ArrayList;
@@ -12,6 +14,10 @@ public class StarShip implements Transport {
     private String model;
     private String weapon;
     private String module;
+
+    @Min(value = 0, message = "value of passengers can't be < 0")
+    @Max(value = 10, message = "value of passengers can't be > 10")
+    private int numOfPassengers;
 
     private LinkedHashMap<String, String> weaponOptions;
 
@@ -69,8 +75,15 @@ public class StarShip implements Transport {
         return additionalModules;
     }
 
-
     public void setPutAdditionalModules(ArrayList<String> additionalModules) {
         this.additionalModules = additionalModules;
+    }
+
+    public int getNumOfPassengers() {
+        return numOfPassengers;
+    }
+
+    public void setNumOfPassengers(int numOfPassengers) {
+        this.numOfPassengers = numOfPassengers;
     }
 }

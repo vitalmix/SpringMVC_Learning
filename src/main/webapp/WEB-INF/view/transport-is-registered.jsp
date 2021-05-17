@@ -15,6 +15,9 @@
 Registered transport:
 <br><br>
 Model: ${starShip.model}
+<br><br>
 Weapon: ${starShip.weapon}
+<br><br>
+Passengers" ${starShip.numOfPassengers}
 </body>
 </html>

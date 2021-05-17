@@ -24,6 +24,9 @@
     <br><br>
     Weapon: <form:input path="weapon"/>
     <br><br>
+    Passengers: <form:input path="numOfPassengers"/>
+    <form:errors path="numOfPassengers" cssClass="error"/>
+    <br><br>
     <input type="submit" value="Submit">
 </form:form>
 
