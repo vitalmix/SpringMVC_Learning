@@ -1,2 +1,4 @@
 # Project exclude paths
 /target/
+/SpringMVC_Learning.iml
+/.idea/
