@@ -23,6 +23,7 @@
     <form:errors path="model" cssClass="error"/>
     <br><br>
     Weapon: <form:input path="weapon"/>
+    <form:errors path="weapon" cssClass="error"/>
     <br><br>
     Passengers: <form:input path="numOfPassengers"/>
     <form:errors path="numOfPassengers" cssClass="error"/>

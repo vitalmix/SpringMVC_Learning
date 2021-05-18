@@ -1,5 +1,7 @@
 package com.company.model;
 
+import com.company.model.annotations.WeaponCode;
+
 import javax.validation.constraints.*;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
@@ -10,6 +12,8 @@ public class StarShip implements Transport {
     @Size(min = 3, message = "size of model must be => 3")
     //@Pattern(regexp = "^[a-zA-Z0-9]{5}", message = "only letters")
     private String model;
+
+    @WeaponCode(value = "A44", message = "weapon name must starts with A44")
     private String weapon;
     private String module;
 
